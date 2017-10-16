@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import {StyleSheet,Text, View,Image,Button} from 'react-native';
+import Chat from '../chat/Chat';
 
 export default class ChatScreen extends Component {
 
@@ -14,12 +15,7 @@ export default class ChatScreen extends Component {
     };
 
     render() {
-        return <View>
-            <Image
-                source={require('../icons/chat.png')}
-                // style={[styles.icon, {tintColor: tintColor}]}
-            />
-                </View>
+        return <Chat></Chat>
     }
 }
 
